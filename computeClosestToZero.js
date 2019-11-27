@@ -1,6 +1,5 @@
 function computeClosestToZero(ts) {
-  // Write your code here
-  // To debug: console.error('Debug messages...');
+
   if(ts && ts.length > 0 && ts.length <= 10000){
       var posNums = ts.filter(t => t > 0);
       var posMin = posNums.length > 0 ? posNums.reduce((min, t) => t < min ? t : min) : 0;
@@ -23,6 +22,7 @@ function computeClosestToZero(ts) {
   
   return 0;
 }
+
 
 /* Ignore and do not change the code below */
 const n = parseInt(readline());
